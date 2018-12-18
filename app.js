@@ -29,7 +29,7 @@ class Application {
 
   createRoomHandler(req, res) {
     if(!req.body.name) {
-      req.status(400).json({});
+      res.status(400).json({});
     } else {
       let room = this.manager.chatRoom(req.body.name);
       let response = {

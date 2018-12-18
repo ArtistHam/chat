@@ -12,7 +12,7 @@ class ChatRoomManager {
   }
 
   findByName(searchSubstring) {
-    let loverSearchSubstring = searchSubstring.toLowerCase();
+    let lowerSearchSubstring = searchSubstring.toLowerCase();
 
     let rooms = Object.keys(this.chatRooms).map(id => this.chatRooms[id]);
 
